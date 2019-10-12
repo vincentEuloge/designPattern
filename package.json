@@ -1,0 +1,20 @@
+{
+  "name": "designpattern",
+  "version": "1.0.0",
+  "description": "Jouer avec les patterns",
+  "main": "index.js",
+  "scripts": {
+    "class": "node create/classPattern.js",
+    "constructor": "node create/constructorPattern.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vincentEuloge/designPattern.git"
+  },
+  "author": "vincent euloge",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vincentEuloge/designPattern/issues"
+  },
+  "homepage": "https://github.com/vincentEuloge/designPattern#readme"
+}
