@@ -32,6 +32,6 @@ On peut séparer les design pattern en trois types dont le but est de:
 
 > Pourquoi j'ai mis un 1 ? car dans la littérature une factory pointe vers deux principes très différents, voici le premier. On peut voir une factory comme une interface de création d'objet, évitant à l'utilisateur de connaitre tous les parametre utile à l'instanciation. Les burgers se prettent mieux à ce pattern que les documents, je te laisse allez voir l'implémentation.
 
-4bis) Factory 2 (*npm run factory2*)
+4) Factory 2 (*npm run factory2*)
 
 > Le javascript est très permissif, et on peut créer des "instances" d'objet de différentes manières, on a déjà vu les class, mais on peut simplement appeler une fonction qui nous renvera un nouvel object stockant les propriétés et fonctionnalités, cet appel de fonction créera ce qu'on appel une closure, sorte de bulle d'éxécution. Ce pattern permet de créer des propriété privée et évite les bug lié au "this" (voir implém) mais il a un contre coup, l'emprunte mémoire est supérieur et le process de création est plus long (mais on parle de microbyte et de nanoseconde, ce qui peut jouer si on a des millions d'objet à instancié)
