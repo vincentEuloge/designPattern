@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "class": "node create/classPattern.js",
-    "constructor": "node create/constructorPattern.js"
+    "constructor": "node create/constructorPattern.js",
+    "singleton": "node create/singletonPattern.js",
+    "factory1": "node create/factory1Pattern.js",
+    "factory2": "node create/factory2Pattern.js"
   },
   "repository": {
     "type": "git",

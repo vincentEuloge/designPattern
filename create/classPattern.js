@@ -10,8 +10,8 @@ class Burger{
 const bigMac = new Burger("Bun", true, true, 2);
 const cactus = new Burger("Muffin", false, true, 1);
 
-console.log(bigMac)
-console.log(cactus)
+console.log(bigMac);
+console.log(cactus);
 
 module.exports = {
     Burger
