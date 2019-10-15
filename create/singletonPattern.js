@@ -1,4 +1,4 @@
-const {Burger} = require ("./classPattern.js");
+const {Burger} = require("./classPattern.js");
 
 let burgerManagerInstance = null;
 

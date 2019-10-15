@@ -10,7 +10,7 @@ On peut séparer les design pattern en trois types dont le but est de:
 - ajouter un comportement
 
 
-## **Création** (/create)
+## **Créer** (/create)
 
 1)  Class (ex prototype) (*npm run class*)
 
@@ -38,7 +38,12 @@ On peut séparer les design pattern en trois types dont le but est de:
 
 5) Abstract
 
-> On peut voir se pattern comme Une factory de factories, factoryception. Je n'a jamais rencontré de use case concret pour celui la, mais dans mon exemple avec des burger on peut imaginer un Abstract qui selon le type de burger, appellera une factory de Burger ou de VegeBurger, eux même, selon le nom, renverront la bonne instance de burger.
+> On peut voir se pattern comme Une factory de factories, factoryception. Je n'ai jamais rencontré de use case concret pour celui la, mais dans mon exemple avec des burger on peut imaginer un Abstract qui selon le type de burger, appellera une factory de Burger ou de VegeBurger, eux même, selon le nom, renverront la bonne instance de burger.
 
+## **Structurer** (/structure)
+
+1) Module (*npm run module*)
+
+> On va retrouver notre concept de closure vu dans le pattern factory 2. Ici (ou ailleurs) la closure va nous permettre de ne pas polluer le scope global avec les variables et fonction déclaré à l'intérieur (à moins de le faire exprès), elles ne seront pas non plus accessible de l'exterieur à moins que la closure retourne une API d'intéraction. Selon moi on retrouve sur la notion de singleton, de plus il suffit d'exporter ce module pour pouvoir l'importer n'importe où dans votre code et l'utiliser comme un singleton. Attention, lorsqu'on passe par un outil tel que webpack, il se charge d'enrobé le code du fichier dont on va exporter une API, d'une iife (fonction auto appelante).
 
 *PS : Il faut garder en tête que le mieux est souvent l'ennemi du bien, et il vaut souvent mieux respecter le principe KISS (keep it simple, stupid. On ne devrait complexifié son architecture avec des pattern que lorsque cela présentera un véritable intérêt et pas juste pour la beauté du code.*

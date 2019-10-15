@@ -8,7 +8,8 @@
     "constructor": "node create/constructorPattern.js",
     "singleton": "node create/singletonPattern.js",
     "factory1": "node create/factory1Pattern.js",
-    "factory2": "node create/factory2Pattern.js"
+    "factory2": "node create/factory2Pattern.js",
+    "module": "node structure/modulePattern.js"
   },
   "repository": {
     "type": "git",
