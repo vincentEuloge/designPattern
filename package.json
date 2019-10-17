@@ -10,7 +10,7 @@
     "factory1": "node create/factory1Pattern.js",
     "factory2": "node create/factory2Pattern.js",
     "module": "node structure/modulePattern.js",
-    "moduleExpress": "nodemon structure/module2Pattern.js --exec babel-node -e js"
+    "module2": "nodemon structure/module2Pattern.js --exec babel-node -e js"
   },
   "repository": {
     "type": "git",
@@ -23,14 +23,11 @@
   },
   "homepage": "https://github.com/vincentEuloge/designPattern#readme",
   "dependencies": {
-    "body-parser": "1.19.0",
     "express": "4.17.1",
-    "mongoose": "5.7.5",
     "nodemon": "1.19.4"
   },
   "devDependencies": {
     "babel-cli": "6.26.0",
-    "babel-preset-env": "1.7.0",
-    "babel-preset-stage-0": "6.24.1"
+    "babel-preset-env": "1.7.0"
   }
 }
