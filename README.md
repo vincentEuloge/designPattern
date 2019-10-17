@@ -50,4 +50,12 @@ On peut séparer les design pattern en trois types dont le but est de:
 
 > Le pattern module utilisé de façon la plus simple possible. Ici le module est garant d'une information.
 
+2) Mixins (*npm run mixins*)
+
+> Une mixin va rajouter une propriété, et/ou un comportement/fonction à un object, on va en quelque sorte mélanger les attributs d'un object, class, fonction, dans un/une autre. On peut aussi voir ça comme un patch.
+
+3) Facade (*npm run facade*)
+
+> Pour résumer, c'est l'art de cacher une certaine forme de compléxité. Une fonction qui contient quelques lignes de code, pourquoi pas même une seule, respecte le pattern de Facade. Lorsqu'on utilise une librairie tel que React, Vue ou Angular et qu'on approche composant, chaque composant est une facade qui masque une certaine forme de compléxité. Respecter ce pattern oblige à bien fragmenter son code source en petit module.
+
 *PS : Il faut garder en tête que le mieux est souvent l'ennemi du bien, et il vaut souvent mieux respecter le principe KISS (keep it simple, stupid. On ne devrait complexifié son architecture avec des pattern que lorsque cela présentera un véritable intérêt et pas juste pour la beauté du code.*

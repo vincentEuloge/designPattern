@@ -10,7 +10,8 @@
     "factory1": "node create/factory1Pattern.js",
     "factory2": "node create/factory2Pattern.js",
     "module": "node structure/modulePattern.js",
-    "module2": "nodemon structure/module2Pattern.js --exec babel-node -e js"
+    "module2": "nodemon structure/module2Pattern.js --exec babel-node -e js",
+    "mixins": "node structure/mixinsPattern.js"
   },
   "repository": {
     "type": "git",
