@@ -54,8 +54,12 @@ On peut séparer les design pattern en trois types dont le but est de:
 
 > Une mixin va rajouter une propriété, et/ou un comportement/fonction à un object, on va en quelque sorte mélanger les attributs d'un object, class, fonction, dans un/une autre. On peut aussi voir ça comme un patch.
 
-1) Facade
+3) Facade
 
-> Pour résumer, c'est l'art de cacher une certaine forme de compléxité. Une fonction qui contient quelques lignes de code, pourquoi pas même une seule, respecte le pattern de Facade. Lorsqu'on utilise une librairie tel que React, Vue ou Angular et qu'on approche composant, chaque composant est une facade qui masque une certaine forme de compléxité. Respecter ce pattern oblige à bien fragmenter son code source en petit module.
+> Pour résumer, c'est l'art de cacher une certaine forme de compléxité. Une fonction qui contient quelques lignes de code, pourquoi pas même une seule, respecte le pattern de Facade. Lorsqu'on utilise une librairie tel que React, Vue ou Angular et qu'on a une approche composant, chaque composant est une facade qui masque une certaine forme de compléxité. Respecter ce pattern oblige à bien fragmenter son code source en petit module.
+
+4) Flyweight
+
+> On va parler optimisation mémoire, et surement aussi vitesse d'éxécution puisque qu'on va s'éviter d'instancié des class ou objet similaire. Reprenons notre class Burger, implémenter dans create/classPattern.js. Au lieu de créer deux instances d'un burger ayant les mêmes caractérisques, imaginons, celle d'un bigmac, et bien on va en créer qu'une seule, les deux variables qui stockeront votre variable pointeront vers la même instance, ainsi l'impact mémoire sera plus faible (et au passage on s'économisera le cout en temps d'éxécution de la création d'une nouvelle instance). Pour s'aider dans ce pattern, une factory nous sera fort utile.
 
 *PS : Il faut garder en tête que le mieux est souvent l'ennemi du bien, et il vaut souvent mieux respecter le principe KISS (keep it simple, stupid. On ne devrait complexifié son architecture avec des pattern que lorsque cela présentera un véritable intérêt et pas juste pour la beauté du code.*
